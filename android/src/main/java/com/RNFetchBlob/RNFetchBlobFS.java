@@ -306,7 +306,7 @@ class RNFetchBlobFS {
             } else if (encoding.equalsIgnoreCase("ascii")) {
                 while ((cursor = fs.read(buffer)) != -1) {
                     WritableArray chunk = Arguments.createArray();
-                    for(int i =0;i<cursor;i++)
+                    for(int i=0;i<cursor;i++)
                     {
                         chunk.pushInt((int)buffer[i]);
                     }
